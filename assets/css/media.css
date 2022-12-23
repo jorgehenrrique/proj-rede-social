@@ -1,0 +1,66 @@
+/* || Media query */
+
+@media screen and (min-width: 0px) { /*Tela Mobile*/
+    .hidden{
+        display: none;
+        transition: .5s;
+    }
+    nav{
+    min-width: 550px;
+    }
+    .col-esquerda{
+        position: relative;
+        left: 6px;
+    }
+    .img-r-top{
+        position: relative;
+        right: 6px;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 'col-p';
+        gap: 24px;
+        margin: 0 24px;
+    }
+    .col-e{
+        display: none;
+    }
+    .col-d{
+        display: none;
+    }
+}
+@media screen and (min-width: 992px) { /*Tela Tablet*/
+    .hidden{
+        display: block;
+        transition: .5s;
+    }
+    .col-esquerda{
+        position: relative;
+        left: 64px;
+    }
+    .img-r-top{
+        position: relative;
+        right: 64px;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 'col-e col-p col-p';
+        gap: 24px;
+        margin: 0 16px;
+    }
+    .col-e{
+        display: initial;
+    }
+}
+@media screen and (min-width: 1200px) { /*Tela Desktop*/
+    .container{
+        display: grid;
+        grid-template-areas: 'col-e col-e col-p col-p col-p col-d';
+        gap: 24px;
+        margin: 0 64px;
+        /* place-items: center; */
+    }
+    .col-d{
+        display: initial;
+    }
+}

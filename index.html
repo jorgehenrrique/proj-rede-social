@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge Henrique">
+    <meta name="description" content="Rede Social Games Share">
+    <link rel="icon" type="image/x-icon" href="./assets/icon/icon.png">
+    <meta name="theme-color" content="#3a283e">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/stalys.css">
+    <title>Games Share</title>
+</head>
+<style>
+/* .container{
+    display: grid;
+    grid-template-areas: 'col-e col-p col-d';
+    gap: 24px;
+} */
+</style>
+<body>
+    <header id="top">
+        <nav>
+            <div class="col-esquerda">
+                <div class="img-logo">
+                    <img src="./assets/icon/logo/controle.png" alt="logo">
+                </div>
+                <h2 class="logo-name hidden">Game</h2>
+                <div class="img-logo">
+                    <img src="./assets/icon/logo/lovegame.png" alt="logo">
+                </div>
+                <h2 class="logo-name hidden">Share</h2>
+            </div>
+            <div class="col-direita">
+                <div class="pesquisa">
+                    <input class="top-search" type="text" name="Search" placeholder="Buscar...">
+                    <button class="img-bkg">
+                    <img src="./assets/icon/components/Vector-3.png" alt="lupa buscar" class="img-icone">
+                    </button>
+                </div>
+                <div class="img-r-top">
+                    <button class="img-bkg hidden">
+                    <img src="./assets/icon/components/Vector-2.png" alt="chat" class="img-icone hidden">
+                    </button>
+                    <button class="img-bkg">
+                    <img src="./assets/icon/components/Vector-1.png" alt="ajustes" class="img-icone">
+                    </button>
+                    <button class="img-bkg">
+                        <div class="notificacao"></div>
+                    <img src="./assets/icon/components/Vector.png" alt="notificacoes" class="img-icone">
+                    </button>
+                    <div class="img-bkg">
+                    <img src="./assets/img/imgperfil.jpg.webp" alt="imagem de perfil" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <aside class="aside-esquerda col-e">
+            <div class="back-img"></div>
+            <div class="profile-img profile-img-master"></div>
+            <h1>Jorge Henrique</h1>
+            <p>Jogador de RPG, MMO, FRS etc</p>
+            <p class="staus-p-sub">Sobrevivente no SCUM, bem sucedido no GTA V, entretando o jogo está poluído de cheater.</p>
+            <div class="status-sub">
+                <span class="status"><p class="status-p">14M</p><p class="staus-p-sub">Seguidores</p></span>
+                <span class="status"><p class="status-p">20K</p><p class="staus-p-sub">Posts</p></span>
+            </div>
+
+            <hr>
+            <div class="options">
+                <div class="conf-options feed"><p>Feed</p></div>
+                <div class="conf-options coneccoes"><p>Coneções</p></div>
+                <div class="conf-options news">Últimas notícias</div>
+                <div class="conf-options eventos">Eventos</div>
+                <div class="conf-options conf">Configurações</div>
+            </div>
+        </aside>
+        <main class="col-p">
+            <section class="scrol">
+                <div class="img-scrol">
+                    <button class="new-story">
+                        <img src="#" alt="" class="img-new-story">
+                    </button>
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </div>
+            </section>
+            <section class="posts">
+                <div class="new-post">
+                    <div class="profile-img profile-img-mini"></div>
+                    <!-- <textarea name="new" id="msg" cols="125px" rows="8" placeholder="O que você conta hoje?" maxlength="300"></textarea> -->
+                    <span>Incluir</span>
+                    <button class="btn-new-foto">Foto</button>
+                    <button class="btn-new-video">Vídeo</button>
+                    <button class="btn-new-evento">Evento</button>
+                    <button>Postar</button>
+                </div>
+                <div class="friend-post friend-post-01">
+                    <div class="profile-img-mini friend-img01"></div>
+                    <h2>Fernando Skyrim</h2><span> - Há 10 min</span>
+                    <p>Jogador de Skyrim</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta aliquid veniam facilis consequatur dolorum! Id quo deserunt rem dicta fugit, ut exercitationem officiis cumque facere vitae tempore minima quidem eos, ea soluta dolorem laboriosam tenetur.</p>
+                    <a href="#">Saiba mais...</a>
+                    <button>Gostei</button>
+                    <button>Compartilhar</button>
+                    <span>13 Comentários</span>
+                    <div class="profile-img profile-img-mini"></div>
+                    <input type="text" name="comentario" placeholder="Comente sobre isso...">
+                </div>
+                <div class="friend-post friend-post-02">
+                    <div class="profile-img-mini friend-img02"></div>
+                    <h2>Evanderson</h2><span> - Há 1 Hora min</span>
+                    <p>Jogador de Overwatch</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta aliquid veniam facilis consequatur dolorum! Id quo deserunt rem dicta fugit, ut exercitationem officiis cumque facere vitae tempore minima quidem eos, ea soluta dolorem laboriosam tenetur.</p>
+                    <a href="#">Saiba mais...</a>
+                    <button>Gostei</button>
+                    <button>Compartilhar</button>
+                    <span>13 Comentários</span>
+                    <div class="profile-img profile-img-mini"></div>
+                    <input type="text" name="comentario" placeholder="Comente sobre isso...">
+                </div>
+            </section>
+        </main>
+        <aside class="aside-direita col-d">
+            <div class="friends-line">
+                <h2>Parecidos com você</h2>
+                <div class="list-friends">
+                    <div class="friend-post friend-post-01"></div>
+                    <h3>Evanderson Skyrim</h3>
+                    <p>Jogador de Skyrim</p>
+                    <img src="#" alt="adicionar amigo">
+                </div>
+                <div class="list-friends">
+                    <div class="friend-post friend-post-02"></div>
+                    <h2>Evanderson</h2>
+                    <p>Jogador de Overwatch</p>
+                    <img src="#" alt="adicionar amigo">
+                </div>
+                <div class="list-friends">
+                    <div class="friend-post friend-post-03"></div>
+                    <h3>Igor</h3>
+                    <p>Jogador de Emulator...</p>
+                    <img src="#" alt="adicionar amigo">
+                </div>
+                <div class="list-friends">
+                    <div class="friend-post friend-post-04"></div>
+                    <h3>Lucas</h3>
+                    <p>Jogador de Overwatch 2</p>
+                    <img src="#" alt="adicionar amigo">
+                </div>
+                <div class="list-friends">
+                    <div class="friend-post friend-post-05"></div>
+                    <h3>Hingrid</h3>
+                    <p>Jogadora Hardcore</p>
+                    <img src="#" alt="adicionar amigo">
+                </div>
+                <button>Ver mais...</button>
+            </div>
+            <section class="alta">
+                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, alias.
+                    <span>Há 15 min</span>
+                </article>
+                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span>Há 55 min</span>
+                </article>
+                <article>Lorem ipsum dolor sit amet consectetur.
+                    <span>Há 2 horas</span>
+                </article>
+            </section>
+        </aside>
+    </div>
+
+    <button class="img-bkg img-top">
+        <a href="#top"><img src="./assets/icon/components/Vector-10.png" alt="subir ao topo" class="img-icone"></a>
+    </button>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@import url("./pseudos.css");
+@import url("./media.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;400;500&display=swap'); */
+@import url("../fontes/Chivo_Mono/ChivoMono-VariableFont_wght.ttf");
+
+html{
+    scroll-behavior: smooth;
+
+    font-family: 'Chivo Mono', monospace;
+}
+/* || Ajustes em toda nav */
+body{
+    position: relative;
+}
+nav{
+    background-color: #3a283e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 100%;
+    position: fixed;
+}
+.col-esquerda, .col-direita{
+    flex-grow: 1;
+}
+div.img-logo{
+    width: 30px;
+    height: 30px;
+}
+.col-esquerda{
+    display: flex;
+    gap: 5px;
+    flex-grow: 2;
+    /* position: relative;
+    left: 64px; / foi para o media */
+    align-items: center;
+}
+.col-direita{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 8px;
+}
+.img-r-top{
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: flex-end;
+    /* position: relative;
+    right: 64px; / foi para o media */
+    column-gap: 8px;
+}
+div.notificacao{
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 10px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.profile-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+}
+.logo-name{
+    font-size: medium;
+    font-size: 18px;
+    color: #57f2ed;
+    font-family: 'Anton', sans-serif;
+}
+.top-search{
+    /* width: auto; */
+    height: 48px;
+    margin-left: 14px;
+    padding-left: 14px;
+    border: 2px solid #f25757;
+}
+/* || Icones quadrados */
+.img-bkg{
+    width: 48px;
+    height: 48px;
+    background-color: #f25757;
+    border-radius: 10px;
+    position: relative;
+}
+.img-icone{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.img-top{
+    position: fixed;
+    right: 40px;
+    bottom: 24px;
+}
+
+/* || Organização container */
+.container{
+    padding-top: 88px;
+}
+.col-e{
+    grid-area: col-e;
+    /* margin-top: 24px; */
+    background-color: #f0d9f5;
+}
+.col-p{
+    grid-area: col-p;
+    /* margin-top: 24px; */
+    background-color: #f0d9f5;
+}
+.col-d{
+    grid-area: col-d;
+    /* margin-top: 24px; */
+    background-color: #f0d9f5;
+}
