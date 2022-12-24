@@ -24,20 +24,29 @@ button.img-bkg:hover{
     border: 2px solid var(--color-txt-escuro);
     transition: .3s;
 }
+.img-bkg{
+    background-color: var(--color-sombra);
+}
 button.img-bkg{
-    border: 2px solid yellow;
+    border: 1px solid var(--color-focus-yellow);
 }
 /* || input style */
 input[class="top-search"]{
-    border: 2px solid #f25757;
+    border: 1px solid var(--color-bkg-orange);
     border-radius: 10px;
 }
 input::placeholder{
-    color: #f25757;
+    color: var(--color-bkg-orange);
 }
 input:focus{
     border: 2px solid var(--color-focus-yellow);
 }
+.conf-options{
+    background-color: var(--color-sombra);
+}
 .conf-options:hover{
     background-color: var(--color-bkg-yellow);
+}
+.conf-options:active{
+    background-color: var(--color-focus-yellow);
 }

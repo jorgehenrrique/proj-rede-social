@@ -12,16 +12,15 @@
     }
     .col-esquerda{
         position: relative;
-        left: 6px;
+        left: 10px;
     }
     .img-r-top{
         position: relative;
-        right: 6px;
+        right: 10px;
     }
     .container{
         display: grid;
-        grid-template-areas: 'col-p';
-        gap: 24px;
+        grid-template-areas: 'col-p col-p';
         margin: 0 24px;
     }
     .col-e{
@@ -40,15 +39,15 @@
     }
     .col-esquerda{
         position: relative;
-        left: 64px;
+        left: 16px;
     }
     .img-r-top{
         position: relative;
-        right: 64px;
+        right: 16px;
     }
     .container{
         display: grid;
-        grid-template-areas: 'col-e col-p col-p';
+        grid-template-areas: 'col-e col-e col-p col-p col-p';
         gap: 24px;
         margin: 0 16px;
     }
@@ -63,6 +62,14 @@
         gap: 24px;
         margin: 0 64px;
     }
+    .col-esquerda{
+        position: relative;
+        left: 64px;
+    }
+    .img-r-top{
+        position: relative;
+        right: 64px;
+    }
     .col-d{
         display: initial;
     }
@@ -76,7 +83,7 @@
       background: #121212;
     }
     .img-bkg{
-        background-color: #f25757;
+        background-color: var(--color-bkg-orange);
     }
     body nav{
         background-color: var(--color-txt-escuroXX);
@@ -90,5 +97,15 @@
     }
     body div.notificacao:hover{
         background-color: var(--color-focus-yellow);
+    }
+
+    aside.col-e{
+        background-color: #d143f1;
+    }
+    main.col-p{
+        background-color: #d143f1;
+    }
+    aside.col-d{
+        background-color: #d143f1;
     }
 }

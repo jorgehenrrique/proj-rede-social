@@ -1,6 +1,7 @@
 @import url("./pseudos.css");
 @import url("./media.css");
 @import url("./variaveis.css");
+@import url("./rolagem.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url("../fontes/Chivo_Mono/ChivoMono-VariableFont_wght.ttf");
@@ -16,11 +17,11 @@ body{
     position: relative;
     height: 90vh;
 }
-header{
+/* header{
     position: sticky;
     top: 0;
     z-index: 1;
-}
+} */
 nav{
     background-color: var(--color-txt-escuro);
     display: flex;
@@ -31,6 +32,10 @@ nav{
     width: 100%;
     /* position: fixed; */
     box-shadow: 0px 5px 40px black;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .col-esquerda, .col-direita{
     flex-grow: 1;
@@ -85,7 +90,7 @@ div.notificacao{
 .logo-name{
     font-size: medium;
     font-size: 18px;
-    color: #57f2ed;
+    color: var(--color-news-cyberblue);
     font-family: 'Anton', sans-serif;
 }
 .top-search{
@@ -99,7 +104,6 @@ div.notificacao{
 .img-bkg{
     width: 48px;
     height: 48px;
-    color: var(--color-txt-escuro);
     border-radius: 10px;
     position: relative;
 }
@@ -144,7 +148,7 @@ div.notificacao{
     /* position: relative; */
     max-height: 850px;
     border-radius: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .back-img{ /*Background perfil*/
     width: 100%;
@@ -219,7 +223,6 @@ hr.style {
     margin-bottom: 25px;
 }
 .conf-options{
-    background-color: var(--color-sombra);
     border-radius: var(--border-radios);
     height: 48px;
     display: flex;
