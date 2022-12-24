@@ -19,23 +19,23 @@
     gap: 24px;
 } */
 </style>
-<body>
-    <header id="top">
+<body id="top">
+    <header>
         <nav>
             <div class="col-esquerda">
                 <div class="img-logo">
-                    <img src="./assets/icon/logo/controle.png" alt="logo">
+                    <img src="./assets/icon/logo/controle.png" width="30px" height="30px" alt="logo">
                 </div>
                 <h2 class="logo-name hidden">Game</h2>
                 <div class="img-logo">
-                    <img src="./assets/icon/logo/lovegame.png" alt="logo">
+                    <img src="./assets/icon/logo/lovegame.png" width="30px" height="30px" alt="logo">
                 </div>
                 <h2 class="logo-name hidden">Share</h2>
             </div>
             <div class="col-direita">
                 <div class="pesquisa">
                     <input class="top-search" type="text" name="Search" placeholder="Buscar...">
-                    <button class="img-bkg">
+                    <button class="img-bkg buscar">
                     <img src="./assets/icon/components/Vector-3.png" alt="lupa buscar" class="img-icone">
                     </button>
                 </div>
@@ -51,7 +51,7 @@
                     <img src="./assets/icon/components/Vector.png" alt="notificacoes" class="img-icone">
                     </button>
                     <div class="img-bkg">
-                    <img src="./assets/img/imgperfil.jpg.webp" alt="imagem de perfil" class="profile-img">
+                    <img src="./assets/img/imgperfil.jpg.webp" alt="imagem de perfil" class="profile-img" width="48px" height="48px">
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
         <aside class="aside-esquerda col-e">
             <div class="back-img"></div>
             <div class="profile-img-maste">
-                <img src="./assets/img/imgperfil.jpg.webp" alt="imagem de perfil" class="profile-img-master">
+                <img src="./assets/img/imgperfil.jpg.webp" width="128px" height="128px" alt="imagem de perfil" class="profile-img-master">
             </div>
             <h1 class="name">Jorge Henrique</h1>
             <p class="name">Jogador de RPG, MMO, FRS etc</p>
@@ -136,49 +136,50 @@
             </section>
         </main>
         <aside class="aside-direita col-d">
+            <h2 class="l-friends">Parecidos com você</h2>
             <div class="friends-line">
-                <h2>Parecidos com você</h2>
                 <div class="list-friends">
-                    <div class="friend-post friend-post-01"></div>
-                    <h3>Evanderson Skyrim</h3>
-                    <p>Jogador de Skyrim</p>
-                    <img src="#" alt="adicionar amigo">
+                    <img src="./assets/img/img-profile/perfil2.jpg" alt="amigo" class="profile-img float-l" width="48px" height="48px">
+                    <div class="friend-adc"></div>
+                    <h3 class="f-name">Evanderson Skyrim</h3>
+                    <p class="p-status">Jogador de Skyrim</p>
                 </div>
                 <div class="list-friends">
-                    <div class="friend-post friend-post-02"></div>
-                    <h2>Evanderson</h2>
-                    <p>Jogador de Overwatch</p>
-                    <img src="#" alt="adicionar amigo">
+                    <img src="./assets/img/img-profile/perfil5.jpg.webp" alt="amigo" class="profile-img float-l" width="48px" height="48px">
+                    <div class="friend-adc"></div>
+                    <h3 class="f-name">Evanderson</h3>
+                    <p class="p-status">Jogador de Over...</p>
                 </div>
                 <div class="list-friends">
-                    <div class="friend-post friend-post-03"></div>
-                    <h3>Igor</h3>
-                    <p>Jogador de Emulator...</p>
-                    <img src="#" alt="adicionar amigo">
+                    <img src="./assets/img/img-profile/perfil3.jpg.webp" alt="amigo" class="profile-img float-l" width="48px" height="48px">
+                    <div class="friend-adc"></div>
+                    <h3 class="f-name">Igor</h3>
+                    <p class="p-status">Jogador de Emul...</p>
                 </div>
                 <div class="list-friends">
-                    <div class="friend-post friend-post-04"></div>
-                    <h3>Lucas</h3>
-                    <p>Jogador de Overwatch 2</p>
-                    <img src="#" alt="adicionar amigo">
+                    <img src="./assets/img/img-profile/perfil4.jpg.webp" alt="amigo" class="profile-img float-l" width="48px" height="48px">
+                    <div class="friend-adc"></div>
+                    <h3 class="f-name">Lucas</h3>
+                    <p class="p-status">Jogador de Over...</p>
                 </div>
                 <div class="list-friends">
-                    <div class="friend-post friend-post-05"></div>
-                    <h3>Hingrid</h3>
-                    <p>Jogadora Hardcore</p>
-                    <img src="#" alt="adicionar amigo">
+                    <img src="./assets/img/img-profile/perfil1.jpg" alt="amigo" class="profile-img float-l" width="48px" height="48px">
+                    <div class="friend-adc"></div>
+                    <h3 class="f-name">Hingrid</h3>
+                    <p class="p-status">Jogadora Hardcore</p>
                 </div>
-                <button>Ver mais...</button>
+                <button class="buscar">Ver mais...</button>
             </div>
-            <section class="alta">
-                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, alias.
-                    <span>Há 15 min</span>
+            <section class="em-alta col-d">
+                <h2 class="l-friends">Em alta</h2>
+                <article class="article-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, alias.
+                    <p class="article-p">Há 15 min</p>
                 </article>
-                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <span>Há 55 min</span>
+                <article class="article-font">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p class="article-p">Há 55 min</p>
                 </article>
-                <article>Lorem ipsum dolor sit amet consectetur.
-                    <span>Há 2 horas</span>
+                <article class="article-font">Lorem ipsum dolor sit amet consectetur.
+                    <p class="article-p">Há 2 horas</p>
                 </article>
             </section>
         </aside>

@@ -4,7 +4,7 @@
     .hidden{
         display: none;
     }
-    aside.aside-esquerda{
+    aside.aside-esquerda, aside.aside-direita{
         display: none;
     }
     nav{
@@ -62,6 +62,9 @@
         gap: 24px;
         margin: 0 64px;
     }
+    aside.aside-direita{
+        display: flex;
+    }
     .col-esquerda{
         position: relative;
         left: 64px;
@@ -78,8 +81,8 @@
 
 /* || DarkMode Sistem */
 @media (prefers-color-scheme: dark) {
-    body {
-      /* color: #eee; */
+    html, body { 
+      /* color: var(--color-news-cyberblue); */
       background: #121212;
     }
     .img-bkg{
@@ -100,12 +103,15 @@
     }
 
     aside.col-e{
-        background-color: #d143f1;
+        background-color: var(--color-bkg-dorkMod);
     }
     main.col-p{
-        background-color: #d143f1;
+        background-color: var(--color-bkg-dorkMod);
     }
     aside.col-d{
-        background-color: #d143f1;
+        background-color: var(--color-bkg-dorkMod);
+    }
+    section.em-alta{
+        background-color: var(--color-bkg-dorkMod);
     }
 }

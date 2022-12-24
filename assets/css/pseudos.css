@@ -22,7 +22,7 @@ button.img-bkg:active{
 button.img-bkg:hover{
     cursor: pointer;
     border: 2px solid var(--color-txt-escuro);
-    transition: .3s;
+    transition: .2s;
 }
 .img-bkg{
     background-color: var(--color-sombra);
@@ -41,12 +41,29 @@ input::placeholder{
 input:focus{
     border: 2px solid var(--color-focus-yellow);
 }
-.conf-options{
+.conf-options, .friend-adc{
+    border-radius: var(--border-radios);
     background-color: var(--color-sombra);
+    transition: .2s;
 }
-.conf-options:hover{
+.conf-options:hover, .friend-adc:hover{
     background-color: var(--color-bkg-yellow);
+    transition: .2s;
 }
-.conf-options:active{
+.conf-options:active, .friend-adc:active{
     background-color: var(--color-focus-yellow);
+}
+
+/* || Botton aside direita */
+.buscar{
+    border-radius: var(--border-radios);
+    border: 1px solid var(--color-focus-yellow);
+    background-color: var(--color-btn-buscar);
+    height: 48px;
+    transition: .2s;
+}
+.buscar:hover, .buscar:active{
+    background-color: var(--color-bkg-yellow);
+    border: 1px solid var(--color-txt-escuro);
+    transition: .2s;
 }

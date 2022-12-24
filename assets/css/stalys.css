@@ -2,26 +2,28 @@
 @import url("./media.css");
 @import url("./variaveis.css");
 @import url("./rolagem.css");
+@import url("./asideDireita.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url("../fontes/Chivo_Mono/ChivoMono-VariableFont_wght.ttf");
 
 html{
     scroll-behavior: smooth;
-
     font-family: 'Chivo Mono', monospace;
 }
 
 /* || Ajustes em toda nav */
 body{
+    /* background-color: var(--color-bkg-bluelight); */
     position: relative;
     height: 90vh;
+    color: var(--color-txt-escuroXX);
 }
-/* header{
+header{
     position: sticky;
     top: 0;
     z-index: 1;
-} */
+}
 nav{
     background-color: var(--color-txt-escuro);
     display: flex;
@@ -33,9 +35,9 @@ nav{
     /* position: fixed; */
     box-shadow: 0px 5px 40px black;
 
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1; */
 }
 .col-esquerda, .col-direita{
     flex-grow: 1;
@@ -82,11 +84,6 @@ div.notificacao{
     right: 5px;
     top: 5px;
 }
-.profile-img{
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
-}
 .logo-name{
     font-size: medium;
     font-size: 18px;
@@ -101,6 +98,11 @@ div.notificacao{
 }
 
 /* || Icones quadrados */
+.profile-img{
+    width: 48px;/*Tamanho controlado no html, pra evitar ghost reload*/
+    height: 48px;
+    border-radius: 10px;
+}
 .img-bkg{
     width: 48px;
     height: 48px;
@@ -126,15 +128,15 @@ div.notificacao{
 }
 .col-e{
     grid-area: col-e;
-    background-color: #f0d9f5;
+    background-color: var(--color-bkg-orangelight);
 }
 .col-p{
     grid-area: col-p;
-    background-color: #f0d9f5;
+    background-color: var(--color-bkg-orangelight);
 }
 .col-d{
     grid-area: col-d;
-    background-color: #f0d9f5;
+    background-color: var(--color-bkg-orangelight);
 }
 
 /* || Aside esquerda */
@@ -143,12 +145,12 @@ div.notificacao{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
     /* min-width: 300px; */
     /* position: relative; */
     max-height: 850px;
-    border-radius: 10px;
-    overflow: hidden;
+    border-radius: var(--border-radios);
+    /* overflow: hidden; */
 }
 .back-img{ /*Background perfil*/
     width: 100%;
@@ -164,7 +166,7 @@ div.notificacao{
     bottom: 50px;
     background-color: var(--color-bkg-yellow);
     border: var(--color-bkg-orange) 2px solid;
-    width: 128px;
+    width: 128px;/*Tamanho controlado no html, pra evitar ghost reload*/
     height: 128px;
     border-radius: 10px;
     z-index: 0;
@@ -172,12 +174,15 @@ div.notificacao{
 h1.name{
     margin-top: -33px;
     font-size: 28px;
+    font-weight: 700;
 }
 p.name{
     font-size: 16px;
+    font-weight: 400;
 }
 p.staus-p-sub{
     font-size: 16px;
+    color: #4d4d4d;
     padding: 32px 16px;
 }
 .status-sub{
@@ -199,12 +204,13 @@ p.staus-p-sub{
     border-radius: 10px;
 }
 .status-p{
-    font-size: x-large;
-    font-weight: bolder;
+    font-size: 23px;
+    font-weight: 700;
     color: var(--color-txt-escuro);
 }
 .status-p-sub{
     color: var(--color-txt-escuro);
+    color: #4d4d4d;
 }
 hr.style {
     width: 80%;
@@ -223,8 +229,7 @@ hr.style {
     margin-bottom: 25px;
 }
 .conf-options{
-    border-radius: var(--border-radios);
-    height: 48px;
+    /* height: 48px; */
     display: flex;
 }
 div.feed{

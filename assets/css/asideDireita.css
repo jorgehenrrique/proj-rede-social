@@ -1,0 +1,74 @@
+/* || Aside direita */
+
+.aside-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+    border-radius: var(--border-radios);
+
+    max-height: 500px;
+}
+h2.l-friends{
+    font-size: 23px;
+    margin-top: 16px;
+}
+h3.f-name{
+    font-size: 19px;
+    font-weight: 700;
+}
+p.p-status{
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+.friends-line{
+    min-width: 250px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    width: 90%;
+}
+/* .list-friends{
+    display: flex;
+} */
+.float-l{
+    margin-right: 8px;
+    float: left;
+    background-color: gray;
+}
+div.friend-adc{
+    background-image: url("../icon/components/User-more.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-top: 10px;
+}
+
+/* || Botton aside direita */
+/* Feito no css pseudos */
+
+/* || section Em alta */
+.em-alta{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 0 16px;
+    border-radius: var(--border-radios);
+    min-height: 355px;
+}
+.article-font{
+    font-size: 16px;
+    font-weight: 600;
+}
+.article-p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
