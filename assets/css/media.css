@@ -3,7 +3,9 @@
 @media screen and (min-width: 0px) { /*Tela Mobile*/
     .hidden{
         display: none;
-        transition: .5s;
+    }
+    aside.aside-esquerda{
+        display: none;
     }
     nav{
     min-width: 550px;
@@ -32,7 +34,9 @@
 @media screen and (min-width: 992px) { /*Tela Tablet*/
     .hidden{
         display: block;
-        transition: .5s;
+    }
+    aside.aside-esquerda{
+        display: flex;
     }
     .col-esquerda{
         position: relative;
@@ -58,9 +62,33 @@
         grid-template-areas: 'col-e col-e col-p col-p col-p col-d';
         gap: 24px;
         margin: 0 64px;
-        /* place-items: center; */
     }
     .col-d{
         display: initial;
+    }
+}
+
+
+/* || DarkMode Sistem */
+@media (prefers-color-scheme: dark) {
+    body {
+      /* color: #eee; */
+      background: #121212;
+    }
+    .img-bkg{
+        background-color: #f25757;
+    }
+    body nav{
+        background-color: var(--color-txt-escuroXX);
+        box-shadow: 0px 5px 20px var(--color-focus-yellow);
+    }
+    button.img-bkg:active{
+        background-color: var(--color-focus-yellow);
+    }
+    body div.notificacao{
+        background-color: var(--color-news-cyberblue);
+    }
+    body div.notificacao:hover{
+        background-color: var(--color-focus-yellow);
     }
 }

@@ -1,19 +1,43 @@
 a:link, a:visited {
-    background-color: #f44336;
-    color: white;
-    /* padding: 15px 25px; */
+    color: #f25757;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: red;
-  }
+    /* display: inline-block; */
+}
+a:hover, a:active {
+    color: orange;
+    text-decoration: line-through;
+}
+.a:hover{
+    background-color: var(--color-bkg-yellow);
+}
 
-/* .img-top, .img-icone, .img-bkg:hover{
+
+body div.notificacao:hover{
+    background-color: var(--color-focus-yellow);
+}
+button.img-bkg:active{
+    background-color: var(--color-bkg-yellow);
+}
+button.img-bkg:hover{
     cursor: pointer;
-} */
-button:hover{
-    cursor: pointer;
+    border: 2px solid var(--color-txt-escuro);
+    transition: .3s;
+}
+button.img-bkg{
+    border: 2px solid yellow;
+}
+/* || input style */
+input[class="top-search"]{
+    border: 2px solid #f25757;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: #f25757;
+}
+input:focus{
+    border: 2px solid var(--color-focus-yellow);
+}
+.conf-options:hover{
+    background-color: var(--color-bkg-yellow);
 }
