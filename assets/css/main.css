@@ -1,0 +1,33 @@
+
+/* || Barra de imagens em scroll */
+.main{
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 24px; */
+}
+/* main.main{
+    background-color: unset;
+} */
+.img-scrol{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 8px;
+}
+.new-story, .btn-story {
+    /* width: 110px; */
+    /* height: 152px; */
+    border-radius: var(--border-radios);
+    background-color: antiquewhite;
+    flex: 0 0 110px;
+}
+div.btn-story{
+    border: dashed 1px gray;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* || Barra de new post */

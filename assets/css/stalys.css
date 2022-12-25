@@ -3,6 +3,7 @@
 @import url("./variaveis.css");
 @import url("./rolagem.css");
 @import url("./asideDireita.css");
+@import url("./main.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url("../fontes/Chivo_Mono/ChivoMono-VariableFont_wght.ttf");
@@ -132,7 +133,7 @@ div.notificacao{
 }
 .col-p{
     grid-area: col-p;
-    background-color: var(--color-bkg-orangelight);
+    /* background-color: var(--color-bkg-orangelight); */
 }
 .col-d{
     grid-area: col-d;

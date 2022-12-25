@@ -108,10 +108,17 @@
     main.col-p{
         background-color: var(--color-bkg-dorkMod);
     }
+    /* .posts{
+        background-color: var(--color-bkg-dorkMod);
+    } */
     aside.col-d{
         background-color: var(--color-bkg-dorkMod);
     }
     section.em-alta{
         background-color: var(--color-bkg-dorkMod);
+    }
+
+    aside hr.style{
+    border: var(--color-news-cyberblue) 1px solid;
     }
 }
