@@ -34,8 +34,9 @@ input[class="top-search"]{
     border: 1px solid var(--color-bkg-orange);
     border-radius: var(--border-radios);
 }
-input::placeholder{
+input::placeholder, textarea::placeholder{
     color: var(--color-bkg-orange);
+    padding-left: 14px;
 }
 input:focus{
     border: 1px solid var(--color-focus-yellow);
