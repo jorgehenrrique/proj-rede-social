@@ -1,27 +1,24 @@
 a:link, a:visited {
-    color: var(--color-txt-escuro);
+    color: #e437d3;
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
 }
 a:hover, a:active {
     color: var(--color-news-cyberblue);
     text-decoration: line-through;
 }
-.a:hover{
-    background-color: var(--color-bkg-yellow);
-}
 
 body div.notificacao:hover{
     background-color: var(--color-focus-yellow);
 }
-button.img-bkg:active{
+/* button.img-bkg:active{
     background-color: var(--color-bkg-yellow);
-}
+} */
 button.img-bkg:hover{
     cursor: pointer;
     border: 2px solid var(--color-txt-escuro);
     transition: .2s;
+    background-color: var(--color-bkg-yellow);
 }
 .img-bkg{
     background-color: var(--color-sombra);
