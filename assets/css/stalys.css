@@ -37,6 +37,7 @@ nav{
 }
 .col-esquerda, .col-direita{
     flex-grow: 1;
+    /* gap: 8px; */
 }
 div.img-logo{
     width: 30px;
@@ -45,10 +46,11 @@ div.img-logo{
 .col-esquerda{
     display: flex;
     gap: 5px;
-    flex-grow: 2;
+    flex-grow: 4;
     /* position: relative;
     left: 64px; / foi para o media */
     align-items: center;
+    height: 48px;
 }
 .col-direita{
     display: flex;
@@ -89,7 +91,7 @@ div.notificacao{
 .top-search{
     height: 48px;
     /* width: auto; */
-    /* margin-left: 14px; */
+    margin-left: 14px;
     /* padding-left: 14px; */
 }
 

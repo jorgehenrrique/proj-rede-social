@@ -49,6 +49,7 @@ input:focus{
 .conf-options:hover, .friend-adc:hover{
     background-color: var(--color-bkg-yellow);
     transition: .2s;
+    cursor: pointer;
 }
 .conf-options:active, .friend-adc:active{
     background-color: var(--color-focus-yellow);
@@ -66,6 +67,7 @@ input:focus{
     background-color: var(--color-bkg-yellow);
     border: 1px solid var(--color-txt-escuro);
     transition: .2s;
+    cursor: pointer;
 }
 .buscar:active{
     background-color: var(--color-focus-yellow);
@@ -82,6 +84,7 @@ input:focus{
     background-color: var(--color-txt-escuro);
     color: var(--color-news-cyberblue);
     transition: .2s;
+    cursor: pointer;
 }
 .btn-postar:active{
     background-color: var(--color-txt-escuroXX);

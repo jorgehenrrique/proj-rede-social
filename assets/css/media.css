@@ -14,10 +14,14 @@
         position: relative;
         left: 10px;
     }
-    .img-r-top{
+    .col-direita{
         position: relative;
         right: 10px;
     }
+    /* .img-r-top{
+        position: relative;
+        right: 10px;
+    } */
     .container{
         display: grid;
         grid-template-areas: 'col-p col-p';
@@ -25,12 +29,12 @@
         /* grid-template-rows: 50px 1fr 30px; */
         /* grid-template-columns: 1fr; */
     }
-    .col-e{
+    /* .col-e{
         display: none;
     }
     .col-d{
         display: none;
-    }
+    } */
 }
 @media screen and (min-width: 992px) { /*Tela Tablet*/
     .hidden{
@@ -40,22 +44,33 @@
         display: flex;
     }
     .col-esquerda{
-        position: relative;
+        /* position: relative; */
         left: 16px;
     }
-    .img-r-top{
-        position: relative;
+    .col-direita{
+        /* position: relative; */
         right: 16px;
     }
     .container{
         display: grid;
-        grid-template-areas: 'col-e col-p col-p col-p';
+        grid-template-areas: 'col-e col-p col-p col-p'
+        'col-d col-p col-p col-p';
         gap: 24px;
         margin: 0 16px;
     }
-    .col-e{
+    /*Para aparecer em baixo do perfil em tela media*/
+    aside.aside-direita{
+        display: flex;
+    }
+    section.em-alta{
+        display: none;
+    }
+    /* .col-e{
         display: initial;
     }
+    .col-d{
+        display: initial;
+    } */
 }
 @media screen and (min-width: 1200px) { /*Tela Desktop*/
     .container{
@@ -66,20 +81,24 @@
         /* grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     }
-    aside.aside-direita{
+    /* Já está habilitado na tela media */
+    /* aside.aside-direita{
+        display: flex;
+    } */
+    section.em-alta{
         display: flex;
     }
     .col-esquerda{
-        position: relative;
+        /* position: relative; */
         left: 64px;
     }
-    .img-r-top{
-        position: relative;
+    .col-direita{
+        /* position: relative; */
         right: 64px;
     }
-    .col-d{
+    /* .col-d{
         display: initial;
-    }
+    } */
 }
 
 
