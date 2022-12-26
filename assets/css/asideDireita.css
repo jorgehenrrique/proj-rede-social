@@ -13,27 +13,30 @@
 h2.l-friends{
     font-size: 23px;
     margin-top: 16px;
+    text-align: center;
 }
-h3.f-name{
+h3.f-name{ /*Reutilizado nos posts*/
     font-size: 19px;
     font-weight: 700;
 }
-p.p-status{
+.p-status{ /*Reutilizado nos posts*/
     font-size: 12px;
     font-weight: 500;
     color: #4d4d4d;
 }
 .friends-line{
-    min-width: 250px;
+    /* min-width: 245px; */
     gap: 24px;
     display: flex;
     flex-direction: column;
     /* flex: 1; */
     width: 90%;
+    /* max-height: 500px; */
 }
-/* .list-friends{
-    display: flex;
-} */
+.list-friends{
+    min-width: 250px;
+    /* padding: 0 16px; */
+}
 .float-l{
     margin-right: 8px;
     float: left;
@@ -49,8 +52,11 @@ div.friend-adc{
     margin-top: 10px;
 }
 
-/* || Botton aside direita */
+/* || Button aside direita */
 /* Feito no css pseudos */
+/* .padd{
+    margin: 0 16px;
+} */
 
 /* || section Em alta */
 .em-alta{
@@ -61,7 +67,8 @@ div.friend-adc{
     gap: 24px;
     padding: 0 16px;
     border-radius: var(--border-radios);
-    min-height: 355px;
+    min-height: 380px;
+    padding-bottom: 16px;
 }
 .article-font{
     font-size: 16px;

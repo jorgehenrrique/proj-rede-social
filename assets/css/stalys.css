@@ -4,6 +4,7 @@
 @import url("./rolagem.css");
 @import url("./asideDireita.css");
 @import url("./main.css");
+@import url("./asideEsquerda.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url("../fontes/Chivo_Mono/ChivoMono-VariableFont_wght.ttf");
@@ -15,7 +16,6 @@ html{
 
 /* || Ajustes em toda nav */
 body{
-    /* background-color: var(--color-bkg-bluelight); */
     position: relative;
     height: 90vh;
     color: var(--color-txt-escuroXX);
@@ -33,12 +33,7 @@ nav{
     justify-content: center;
     height: 64px;
     width: 100%;
-    /* position: fixed; */
     box-shadow: 0px 5px 40px black;
-
-    /* position: sticky;
-    top: 0;
-    z-index: 1; */
 }
 .col-esquerda, .col-direita{
     flex-grow: 1;
@@ -94,7 +89,7 @@ div.notificacao{
 .top-search{
     /* width: auto; */
     height: 48px;
-    margin-left: 14px;
+    /* margin-left: 14px; */
     padding-left: 14px;
 }
 
@@ -129,146 +124,27 @@ div.notificacao{
 }
 .col-e{
     grid-area: col-e;
-    background-color: var(--color-bkg-orangelight);
 }
 .col-p{
     grid-area: col-p;
-    /* background-color: var(--color-bkg-orangelight); */
 }
 .col-d{
     grid-area: col-d;
-    background-color: var(--color-bkg-orangelight);
 }
 
-/* || Aside esquerda */
+/* || Organizacao cor background */
 .aside-esquerda{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    /* max-width: 400px; */
-    /* min-width: 300px; */
-    /* position: relative; */
-    max-height: 850px;
-    border-radius: var(--border-radios);
-    /* overflow: hidden; */
+    background-color: var(--color-bkg-orangelight);
 }
-.back-img{ /*Background perfil*/
-    width: 100%;
-    height: 100px;
-    background-color: #949281;
-    background-image: url("../img/img-scrol/bkg2.jpg.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.new-post{
+    background-color: var(--color-bkg-orangelight);
 }
-.profile-img-master{ /*Foto perfil*/
-    position: relative;
-    bottom: 50px;
-    background-color: var(--color-bkg-yellow);
-    border: var(--color-bkg-orange) 2px solid;
-    width: 128px;/*Tamanho controlado no html, pra evitar ghost reload*/
-    height: 128px;
-    border-radius: 10px;
-    z-index: 0;
+.friend-post{
+    background-color: var(--color-bkg-orangelight);
 }
-h1.name{
-    margin-top: -33px;
-    font-size: 28px;
-    font-weight: 700;
+.aside-direita{
+    background-color: var(--color-bkg-orangelight);
 }
-p.name{
-    font-size: 16px;
-    font-weight: 400;
-}
-p.staus-p-sub{
-    font-size: 16px;
-    color: #4d4d4d;
-    padding: 32px 16px;
-}
-.status-sub{
-    width: 80%;
-    height: 69px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-}
-.status{
-    background-color: var(--color-bkg-yellow);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 68px;
-    flex: 1;
-    border-radius: 10px;
-}
-.status-p{
-    font-size: 23px;
-    font-weight: 700;
-    color: var(--color-txt-escuro);
-}
-.status-p-sub{
-    color: var(--color-txt-escuro);
-    color: #4d4d4d;
-}
-hr.style {
-    width: 80%;
-    margin: 24px 0;
-    border-style: inset;
-    /* border-width: 1px; */
-    border: var(--color-bkg-orange) 1px solid;
-}
-.options{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: space-evenly;
-    width: 80%;
-    gap: 8px;
-    margin-bottom: 25px;
-}
-.conf-options{
-    /* height: 48px; */
-    display: flex;
-}
-div.feed{
-    background-image: url("../icon/components/Vector-6.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 48px;
-    height: 48px;
-}
-div.coneccoes{
-    background-image: url("../icon/components/Vector-5.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 48px;
-    height: 48px;
-}
-div.news{
-    background-image: url("../icon/components/Vector-7.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 48px;
-    height: 48px;
-}
-div.eventos{
-    background-image: url("../icon/components/Vector-8.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 48px;
-    height: 48px;
-}
-div.conf{
-    background-image: url("../icon/components/Vector-1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 48px;
-    height: 48px;
-}
-span.span-options{
-    color: var(--color-txt-escuro);
-    align-self: center;
+.em-alta{
+    background-color: var(--color-bkg-orangelight);
 }

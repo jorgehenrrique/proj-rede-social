@@ -22,6 +22,8 @@
         display: grid;
         grid-template-areas: 'col-p col-p';
         margin: 0 24px;
+        /* grid-template-rows: 50px 1fr 30px; */
+        /* grid-template-columns: 1fr; */
     }
     .col-e{
         display: none;
@@ -47,7 +49,7 @@
     }
     .container{
         display: grid;
-        grid-template-areas: 'col-e col-e col-p col-p col-p';
+        grid-template-areas: 'col-e col-p col-p col-p';
         gap: 24px;
         margin: 0 16px;
     }
@@ -58,9 +60,11 @@
 @media screen and (min-width: 1200px) { /*Tela Desktop*/
     .container{
         display: grid;
-        grid-template-areas: 'col-e col-e col-p col-p col-p col-d';
+        grid-template-areas: 'col-e col-e col-p col-p col-p col-p col-d';
         gap: 24px;
         margin: 0 64px;
+        /* grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     }
     aside.aside-direita{
         display: flex;
@@ -102,23 +106,24 @@
         background-color: var(--color-focus-yellow);
     }
 
-    aside.col-e{
+    /* || Cores */
+    aside.aside-esquerda{
         background-color: var(--color-bkg-dorkMod);
     }
-    main.col-p{
+    div.new-post{
         background-color: var(--color-bkg-dorkMod);
     }
-    /* .posts{
+    div.friend-post{
         background-color: var(--color-bkg-dorkMod);
-    } */
-    aside.col-d{
+    }
+    aside.aside-direita{
         background-color: var(--color-bkg-dorkMod);
     }
     section.em-alta{
         background-color: var(--color-bkg-dorkMod);
     }
 
-    aside hr.style{
+    aside hr.style, div hr.style-p{
     border: var(--color-news-cyberblue) 1px solid;
     }
 }

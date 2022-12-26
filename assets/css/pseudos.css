@@ -1,17 +1,16 @@
 a:link, a:visited {
-    color: #f25757;
+    color: var(--color-txt-escuro);
     text-align: center;
     text-decoration: none;
     /* display: inline-block; */
 }
 a:hover, a:active {
-    color: orange;
+    color: var(--color-news-cyberblue);
     text-decoration: line-through;
 }
 .a:hover{
     background-color: var(--color-bkg-yellow);
 }
-
 
 body div.notificacao:hover{
     background-color: var(--color-focus-yellow);
@@ -33,13 +32,13 @@ button.img-bkg{
 /* || input style */
 input[class="top-search"]{
     border: 1px solid var(--color-bkg-orange);
-    border-radius: 10px;
+    border-radius: var(--border-radios);
 }
 input::placeholder{
     color: var(--color-bkg-orange);
 }
 input:focus{
-    border: 2px solid var(--color-focus-yellow);
+    border: 1px solid var(--color-focus-yellow);
 }
 .conf-options, .friend-adc{
     border-radius: var(--border-radios);
@@ -54,16 +53,35 @@ input:focus{
     background-color: var(--color-focus-yellow);
 }
 
-/* || Botton aside direita */
+/* || Botton aside direita E guia de postes*/
 .buscar{
     border-radius: var(--border-radios);
-    border: 1px solid var(--color-focus-yellow);
     background-color: var(--color-btn-buscar);
+    border: 1px solid var(--color-focus-yellow);
     height: 48px;
     transition: .2s;
 }
-.buscar:hover, .buscar:active{
+.buscar:hover{
     background-color: var(--color-bkg-yellow);
     border: 1px solid var(--color-txt-escuro);
     transition: .2s;
+}
+.buscar:active{
+    background-color: var(--color-focus-yellow);
+    transition: .2s;
+}
+
+/* || Botao postar */
+.btn-postar{
+    background-color: var(--color-news-cyberblue);
+    border-radius: var(--border-radios);
+    border: 1px solid var(--color-focus-yellow);
+}
+.btn-postar:hover{
+    background-color: var(--color-txt-escuro);
+    color: var(--color-news-cyberblue);
+    transition: .2s;
+}
+.btn-postar:active{
+    background-color: var(--color-txt-escuroXX);
 }

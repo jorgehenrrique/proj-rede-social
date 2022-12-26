@@ -76,7 +76,7 @@
                 <div class="conf-options">
                     <div class="feed"></div><span class="span-options">Feed</span></div>
                 <div class="conf-options">
-                    <div class="coneccoes"></div><span class="span-options">Coneções</span></div>
+                    <div class="coneccoes"></div><span class="span-options">Conecções</span></div>
                 <div class="conf-options">
                     <div class="news"></div><span class="span-options">Últimas notícias</span></div>
                 <div class="conf-options">
@@ -85,12 +85,12 @@
                     <div class="conf"></div><span class="span-options">Configurações</span></div>
             </div>
         </aside>
-        <main class="main col-p">
-            <section class="scrol">
+        <main class="main col-p"> <!-- col-p -->
+            <section class="scrol col-p">
                 <div class="img-scrol">
                     <div class="btn-story">
-                        <img src="./assets/icon/components/Vector-9.png" alt="" class="btn-story" width="20px" height="20px">
-                        <p>Novo story</p>
+                        <img src="./assets/icon/components/Vector-9.png" alt=""  width="20px" height="20px">
+                        <p class="img-story">Novo story</p>
                     </div>
                     <img src="./assets/img/img-scrol/imgscrol4.jpg.webp" alt="perfil" width="110px" height="152px" class="new-story">
                     <img src="./assets/img/img-scrol/imgscrol5.jpg.webp" alt="perfil" width="110px" height="152px" class="new-story">
@@ -98,51 +98,82 @@
                     <img src="./assets/img/img-scrol/imgscrol7.jpg.webp" alt="perfil" width="110px" height="152px" class="new-story">
                     <img src="./assets/img/img-scrol/imgscrol1.jpg" alt="perfil" width="110px" height="152px" class="new-story">
                     <img src="./assets/img/img-scrol/imgscrol3.jpg.webp" alt="perfil" width="110px" height="152px" class="new-story">
+                    <img src="./assets/img/img-scrol/imgscrol7.jpg.webp" alt="perfil" width="110px" height="152px" class="new-story">
+                    <img src="./assets/img/img-scrol/imgscrol1.jpg" alt="perfil" width="110px" height="152px" class="new-story">
+                    <img src="./assets/img/img-scrol/imgscrol3.jpg.webp" alt="perfil" width="110px" height="152px" class="new-story">
                 </div>
             </section>
+            
             <section class="posts">
-                <div class="new-post">
-                    <div class="profile-img profile-img-mini"></div>
-                    <!-- <textarea name="new" id="msg" cols="125px" rows="8" placeholder="O que você conta hoje?" maxlength="300"></textarea> -->
-                    <span>Incluir</span>
-                    <button class="btn-new-foto">Foto</button>
-                    <button class="btn-new-video">Vídeo</button>
-                    <button class="btn-new-evento">Evento</button>
-                    <button>Postar</button>
+                <div class="new-post col-p">
+                    <div class="img-post-area">
+                        <img src="./assets/img/imgperfil.jpg.webp" alt="imagem de perfil" class="profile-img" width="48px" height="48px">
+                        <textarea name="new" id="msg" cols="125px" rows="8" placeholder="O que você conta hoje?" maxlength="600"></textarea>
+                    </div>
+                    <div class="posts-btn">
+                        <span class="incluir">Incluir</span>
+                        <button class="btn buscar">Foto</button>
+                        <button class="btn buscar">Vídeo</button>
+                        <button class="btn buscar">Evento</button>
+                    </div>
+                    <button class="btn-postar">Postar</button>
                 </div>
-                <div class="friend-post friend-post-01">
-                    <div class="profile-img-mini friend-img01"></div>
-                    <h2>Fernando Skyrim</h2><span> - Há 10 min</span>
-                    <p>Jogador de Skyrim</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta aliquid veniam facilis consequatur dolorum! Id quo deserunt rem dicta fugit, ut exercitationem officiis cumque facere vitae tempore minima quidem eos, ea soluta dolorem laboriosam tenetur.</p>
-                    <a href="#">Saiba mais...</a>
-                    <button>Gostei</button>
-                    <button>Compartilhar</button>
-                    <span>13 Comentários</span>
-                    <div class="profile-img profile-img-mini"></div>
-                    <input type="text" name="comentario" placeholder="Comente sobre isso...">
+
+                <div class="friend-post col-p">
+                    <div class="post-friends">
+                        <img src="./assets/img/img-profile/perfil2.jpg" alt="amigo" class="profile-img float-p" width="48px" height="48px">
+                        <h3 class="f-name">Fernando</h3>
+                        <span class="p-status"> - Há 10 min</span>
+                        <p class="p-status">Jogador de Skyrim</p>
+                    </div>
+                    <p class="name pad">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta aliquid veniam facilis consequatur dolorum! Id quo deserunt rem dicta fugit, ut exercitationem officiis cumque facere vitae tempore minima quidem eos, ea soluta dolorem laboriosam tenetur. <a href="#">Saiba mais...</a></p>
+                    
+                    <div class="org-post">
+                        <button class="buscar btn">Gostei</button>
+                        <button class="buscar btn">Compartilhar</button>
+                        <span class="coments">13 Comentários</span>
+                        <hr class="style-p">
+                    </div>
+
+                    <div class="img-post">
+                        <img src="./assets/img/imgperfil.jpg.webp" alt="imagem de perfil" class="profile-img" width="48px" height="48px">
+                        <input type="text" name="comentario" placeholder="Comente sobre isso...">
+                    </div>
                 </div>
-                <div class="friend-post friend-post-02">
-                    <div class="profile-img-mini friend-img02"></div>
-                    <h2>Evanderson</h2><span> - Há 1 Hora min</span>
-                    <p>Jogador de Overwatch</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta aliquid veniam facilis consequatur dolorum! Id quo deserunt rem dicta fugit, ut exercitationem officiis cumque facere vitae tempore minima quidem eos, ea soluta dolorem laboriosam tenetur.</p>
-                    <a href="#">Saiba mais...</a>
-                    <button>Gostei</button>
-                    <button>Compartilhar</button>
-                    <span>13 Comentários</span>
-                    <div class="profile-img profile-img-mini"></div>
-                    <input type="text" name="comentario" placeholder="Comente sobre isso...">
+
+                <div class="friend-post col-p">
+                    <div class="post-friends">
+                        <img src="./assets/img/img-profile/perfil5.jpg.webp" alt="amigo" class="profile-img float-p" width="48px" height="48px">
+                        <h3 class="f-name">Evanderson</h3>
+                        <span class="p-status"> - Há 1 Hora min</span>
+                        <p class="p-status">Jogador de Overwatch</p>
+                    </div>
+                    <p class="name pad">Minha nova capa de perfil!!</p>
+                    <div class="new-post-image">
+                        <img src="./assets/img/img-scrol/bkg4.jpg.webp" alt="aurora" class="img-new-post" width="100%" height="100%">
+                    </div>
+                    
+                    <div class="org-post">
+                        <button class="buscar btn">Gostei</button>
+                        <button class="buscar btn">Compartilhar</button>
+                        <span class="coments">4 Comentários</span>
+                        <hr class="style-p">
+                    </div>
+
+                    <div class="img-post">
+                        <img src="./assets/img/imgperfil.jpg.webp" alt="imagem de perfil" class="profile-img" width="48px" height="48px">
+                        <input type="text" name="comentario" placeholder="Comente sobre isso...">
+                    </div>
                 </div>
             </section>
         </main>
         <aside class="aside-direita col-d">
-            <h2 class="l-friends">Parecidos com você</h2>
-            <div class="friends-line">
+            <div class="friends-line col-d">
+                <h2 class="l-friends">Parecidos com você</h2>
                 <div class="list-friends">
                     <img src="./assets/img/img-profile/perfil2.jpg" alt="amigo" class="profile-img float-l" width="48px" height="48px">
                     <div class="friend-adc"></div>
-                    <h3 class="f-name">Fernando Skyrim</h3>
+                    <h3 class="f-name">Fernando</h3>
                     <p class="p-status">Jogador de Skyrim</p>
                 </div>
                 <div class="list-friends">
@@ -169,8 +200,9 @@
                     <h3 class="f-name">Hingrid</h3>
                     <p class="p-status">Jogadora Hardcore</p>
                 </div>
-                <button class="buscar">Ver mais...</button>
+                <button class="buscar padd">Ver mais...</button>
             </div>
+            
             <section class="em-alta col-d">
                 <h2 class="l-friends">Em alta</h2>
                 <article class="article-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, alias.
