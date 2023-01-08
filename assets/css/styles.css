@@ -97,6 +97,7 @@ div.notificacao{
     /* width: auto; */
     margin-left: 14px;
     /* padding-left: 14px; */
+    border-radius: var(--border-radios);
 }
 
 /* || Icones quadrados */
@@ -148,7 +149,7 @@ div.notificacao{
 .friend-post{
     background-color: var(--color-bkg-orangelight);
 }
-.aside-direita{
+.friends-line{
     background-color: var(--color-bkg-orangelight);
 }
 .em-alta{

@@ -1,14 +1,11 @@
 /* || Media query */
 
 @media screen and (min-width: 0px) { /*Tela Mobile*/
-    .hidden{
+    .hiddenP, .hidden{
         display: none;
     }
     aside.aside-esquerda, aside.aside-direita{
         display: none;
-    }
-    nav{
-    min-width: 550px;
     }
     .col-esquerda{
         position: relative;
@@ -18,6 +15,35 @@
         position: relative;
         right: 10px;
     }
+
+    .container{
+        display: grid;
+        grid-template-areas: 'col-p col-p';
+        margin: 0 24px;
+    }
+
+}
+@media screen and (min-width: 736px) { /*Tela Mobile2*/
+    /* .hidden{
+        display: none;
+    } */
+    .hiddenP{
+        display: inherit;
+    }
+    aside.aside-esquerda, aside.aside-direita{
+        display: none;
+    }
+    /* nav{
+    min-width: 550px;
+    } */
+    /* .col-esquerda{
+        position: relative;
+        left: 10px;
+    }
+    .col-direita{
+        position: relative;
+        right: 10px;
+    } */
     /* .img-r-top{
         position: relative;
         right: 10px;
@@ -75,7 +101,7 @@
 @media screen and (min-width: 1200px) { /*Tela Desktop*/
     .container{
         display: grid;
-        grid-template-areas: 'col-e col-e col-p col-p col-p col-p col-d';
+        grid-template-areas: 'col-e col-e col-e col-p col-p col-p col-p col-d col-d';
         gap: 24px;
         margin: 0 64px;
         /* grid-template-rows: 1fr;
@@ -135,7 +161,7 @@
     div.friend-post{
         background-color: var(--color-bkg-dorkMod);
     }
-    aside.aside-direita{
+    div.friends-line{
         background-color: var(--color-bkg-dorkMod);
     }
     section.em-alta{
@@ -144,5 +170,9 @@
 
     aside hr.style, div hr.style-p{
     border: var(--color-news-cyberblue) 1px solid;
+    }
+
+    img.profile-img-master{ /*Foto perfil*/
+        border: var(--color-news-cyberblue) 2px solid;
     }
 }
