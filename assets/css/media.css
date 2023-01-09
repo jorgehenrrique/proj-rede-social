@@ -1,9 +1,12 @@
 /* || Media query */
 
-@media screen and (max-width: 500px){
-    button.btn-postar{
+@media screen and (max-width: 500px){ 
+    button.btn-postar{ /*botao postar*/
         margin-top: 0px;
         margin-bottom: 12px;
+    }
+    span.coments{ /*comentarios*/
+        margin-top: 12px;
     }
 }
 
