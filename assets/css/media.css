@@ -23,16 +23,16 @@
     }
 
 }
-@media screen and (min-width: 736px) { /*Tela Mobile2*/
+@media screen and (min-width: 576px) { /*Tela Mobile2*/
     /* .hidden{
         display: none;
     } */
     .hiddenP{
         display: inherit;
     }
-    aside.aside-esquerda, aside.aside-direita{
+    /* aside.aside-esquerda, aside.aside-direita{
         display: none;
-    }
+    } */
     /* nav{
     min-width: 550px;
     } */
@@ -48,13 +48,11 @@
         position: relative;
         right: 10px;
     } */
-    .container{
+    /* .container{
         display: grid;
         grid-template-areas: 'col-p col-p';
         margin: 0 24px;
-        /* grid-template-rows: 50px 1fr 30px; */
-        /* grid-template-columns: 1fr; */
-    }
+    } */
     /* .col-e{
         display: none;
     }
@@ -64,7 +62,7 @@
 }
 @media screen and (min-width: 992px) { /*Tela Tablet*/
     .hidden{
-        display: block;
+        display: inherit;
     }
     aside.aside-esquerda{
         display: flex;

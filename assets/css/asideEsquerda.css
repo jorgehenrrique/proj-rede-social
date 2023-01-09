@@ -7,7 +7,8 @@
     width: 100%;
 
     min-width: 200px;
-    max-height: 850px;
+    /* max-height: 850px; */
+    height: fit-content;
     border-radius: var(--border-radios);
     overflow: hidden;
 }
@@ -44,6 +45,7 @@ p.name{ /*Reutilizado na main, posts*/
     font-weight: 400;
     color: #4d4d4d;
     padding: 32px 16px;
+    text-align: center;
 }
 .status-sub{
     width: 80%;
