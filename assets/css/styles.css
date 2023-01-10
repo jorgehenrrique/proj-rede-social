@@ -88,7 +88,7 @@ div.notificacao{
 }
 .logo-name{
     font-size: medium;
-    font-size: 2rem;
+    font-size: calc(1rem + 1vw);
     color: var(--color-news-cyberblue);
     font-family: 'Anton', sans-serif;
 }
