@@ -121,7 +121,7 @@ div.notificacao{
     left: 30%;
     top: 30%;
 }
-.img-top{
+.img-top{ /*Botao de subir ao topo*/
     position: fixed;
     right: 40px;
     bottom: 24px;
