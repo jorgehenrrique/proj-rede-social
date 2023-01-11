@@ -28,7 +28,7 @@
     border: var(--color-bkg-orange) 2px solid;
     width: 128px;/*Tamanho controlado no html, pra evitar ghost reload*/
     height: 128px;
-    border-radius: 10px;
+    border-radius: var(--border-radios);
     z-index: 0;
 }
 h1.name{
