@@ -8,16 +8,28 @@
 .friends-line{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     width: 100%;
     gap: 24px;
     border-radius: var(--border-radios);
-    padding: 0 16px;
+    /* padding: 0 16px; */
     padding-bottom: 16px;
 
+    /* height: fit-content; */
     /* min-width: 225px; */
     /* max-width: 280px; */
     /* width: max-content; */
+}
+.list-friends{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
 }
 h2.l-friends{
     font-size: 23px;
@@ -33,31 +45,27 @@ h3.f-name{ /*Reutilizado nos posts*/
     font-weight: 500;
     color: #4d4d4d;
 }
-/* .list-friends{
-    min-width: 225px;
-    padding: 0 16px;
-} */
-.float-l{
+/* .float-l{
     margin-right: 8px;
     float: left;
     background-color: gray;
-}
+} */
 div.friend-adc{
     background-image: url("../icon/components/User-more.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 32px;
     height: 32px;
-    float: right;
-    margin-top: 8px;
+    /* float: right;
+    margin-top: 8px; */
 }
 
 /* || Button aside direita */
 /* Feito no css pseudos */
-/* .padd{
-    margin: 0 16px;
-    width: 100%;
-} */
+.padd{
+    width: 80%;
+    /* align-self: center; */
+}
 
 /* || section Em alta */
 .em-alta{
