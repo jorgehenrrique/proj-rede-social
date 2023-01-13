@@ -3,9 +3,6 @@
 .main{
     display: flex;
     flex-direction: column;
-    /* flex: 1; */
-    /* justify-content: center; */
-    /* align-items: center; */
     gap: 24px;
 }
 
@@ -58,7 +55,6 @@ textarea[name="new"]{
     border-radius: var(--border-radios);
     margin-left: 12px;
     border: 1px solid;
-    /* padding-left: 14px; */
 }
 span.incluir{
     font-weight: 500;
@@ -69,7 +65,6 @@ span.incluir{
     padding-top: 12px;
     display: inline-flex;
     gap: 8px;
-    /* align-items: flex-start; */
     padding-bottom: 34px;
 }
 .btn{
@@ -125,7 +120,6 @@ hr.style-p {
 }
 .new-post-image{
     margin: 12px;
-    /* padding: 12px; */
 }
 .img-new-post{
     border-radius: var(--border-radios);
@@ -138,7 +132,6 @@ input[name="comentario"]{
     border-radius: var(--border-radios);
     margin-left: 12px;
     border: 1px solid;
-    /* padding-left: 14px; */
 }
 .img-post{
     margin: 0 12px;

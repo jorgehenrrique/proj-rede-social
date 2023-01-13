@@ -17,8 +17,6 @@ html{
 /* || Ajustes em toda nav */
 body{
     position: relative;
-    /* height: 90vh; */
-    /* background-color: var(--color-bkg-bluelight); */
     color: var(--color-txt-escuroXX);
 }
 header{
@@ -41,7 +39,6 @@ nav{
 }
 .col-esquerda, .col-direita{
     flex-grow: 1;
-    /* gap: 8px; */
 }
 div.img-logo{
     width: 30px;
@@ -51,8 +48,6 @@ div.img-logo{
     display: flex;
     gap: 5px;
     flex-grow: 4;
-    /* position: relative;
-    left: 64px; / foi para o media */
     align-items: center;
     height: 48px;
 }
@@ -73,8 +68,6 @@ div.img-logo{
     flex: 1;
     align-content: center;
     justify-content: flex-end;
-    /* position: relative;
-    right: 64px; / foi para o media */
     column-gap: 8px;
 }
 div.notificacao{
@@ -94,10 +87,9 @@ div.notificacao{
 }
 .top-search{
     height: 48px;
-    /* width: auto; */
     margin-left: 14px;
 
-    /* propriedades abaixo retiradas de pseudos, para serem herdados... */
+    /* propriedades abaixo retiradas de pseudos, para serem herdadas... */
     border: 1px solid var(--color-bkg-orange);
     border-radius: var(--border-radios);
 }
@@ -126,7 +118,7 @@ div.notificacao{
     position: fixed;
     right: 40px;
     bottom: 24px;
-    opacity: 50%;
+    opacity: 40%;
     transition: all 2s;
     border-radius: 50%;
     cursor: pointer;

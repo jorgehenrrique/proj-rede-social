@@ -11,9 +11,6 @@ a:hover, a:active {
 body div.notificacao:hover{
     background-color: var(--color-focus-yellow);
 }
-/* button.img-bkg:active{
-    background-color: var(--color-bkg-yellow);
-} */
 button.img-bkg:hover{
     cursor: pointer;
     border: 2px solid var(--color-txt-escuro);

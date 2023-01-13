@@ -34,41 +34,9 @@
 
 }
 @media screen and (min-width: 576px) { /*Tela Mobile2*/
-    /* .hidden{
-        display: none;
-    } */
     .hiddenP{
         display: inherit;
     }
-    /* aside.aside-esquerda, aside.aside-direita{
-        display: none;
-    } */
-    /* nav{
-    min-width: 550px;
-    } */
-    /* .col-esquerda{
-        position: relative;
-        left: 10px;
-    }
-    .col-direita{
-        position: relative;
-        right: 10px;
-    } */
-    /* .img-r-top{
-        position: relative;
-        right: 10px;
-    } */
-    /* .container{
-        display: grid;
-        grid-template-areas: 'col-p col-p';
-        margin: 0 24px;
-    } */
-    /* .col-e{
-        display: none;
-    }
-    .col-d{
-        display: none;
-    } */
 }
 @media screen and (min-width: 992px) { /*Tela Tablet*/
     .hidden{
@@ -78,11 +46,9 @@
         display: flex;
     }
     .col-esquerda{
-        /* position: relative; */
         left: 16px;
     }
     .col-direita{
-        /* position: relative; */
         right: 16px;
     }
     .container{
@@ -99,12 +65,6 @@
     section.em-alta{
         display: none;
     }
-    /* .col-e{
-        display: initial;
-    }
-    .col-d{
-        display: initial;
-    } */
 }
 @media screen and (min-width: 1200px) { /*Tela Desktop*/
     .container{
@@ -112,8 +72,6 @@
         grid-template-areas: 'col-e col-e col-e col-p col-p col-p col-p col-d col-d';
         gap: 24px;
         margin: 0 64px;
-        /* grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     }
     /* Já está habilitado na tela media */
     /* aside.aside-direita{
@@ -123,24 +81,18 @@
         display: flex;
     }
     .col-esquerda{
-        /* position: relative; */
         left: 64px;
     }
     .col-direita{
-        /* position: relative; */
         right: 64px;
     }
-    /* .col-d{
-        display: initial;
-    } */
 }
 
 
 /* || DarkMode Sistem */
 @media (prefers-color-scheme: dark) {
     html, body { 
-      /* color: var(--color-news-cyberblue); */
-      background: #121212;
+      background: var(--color-bkg-body);
     }
     .img-bkg{
         background-color: var(--color-bkg-orange);
