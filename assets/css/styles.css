@@ -119,7 +119,7 @@ div.notificacao{
     right: 40px;
     bottom: 24px;
     opacity: 40%;
-    transition: all 2s;
+    transition: all 1s;
     border-radius: 50%;
     cursor: pointer;
 }
